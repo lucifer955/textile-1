@@ -1,0 +1,25 @@
+.button{
+
+
+	-fx-text-fill:#2196f3;
+	-fx-background-color:white;
+	-fx-font-size: 17;
+	-fx-font-weight: bold;
+}
+
+.button:hover{
+	-fx-font-weight: bold;
+	-fx-font-size: 17;
+	-fx-text-fill:#2196f3;
+	-fx-background-color:#b3b3b3 	;
+	
+
+}
+.button:pressed{
+	-fx-font-weight: bold;
+	-fx-background-color: #b3b3b3;
+	-fx-font-size: 17;
+	-fx-text-fill:#2196f3;
+	
+	-fx-border-width:3;
+}

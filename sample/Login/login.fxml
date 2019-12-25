@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login.LoginController">
+   <top>
+      <Pane prefHeight="27.0" prefWidth="604.0" style="-fx-background-color: #1a001a;" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Pane prefHeight="391.0" prefWidth="61.0" style="-fx-background-color: #1a001a;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="391.0" prefWidth="61.0" style="-fx-background-color: #1a001a;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="28.0" prefWidth="604.0" style="-fx-background-color: #1a001a;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane minHeight="-Infinity" prefHeight="433.0" prefWidth="481.0" style="-fx-background-color: #1a001a;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutY="132.0" prefHeight="62.0" prefWidth="357.0" style="-fx-background-color: #1a001a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="132.0">
+               <children>
+                  <TextField fx:id="userid" cacheShape="false" centerShape="false" focusTraversable="false" prefHeight="26.0" prefWidth="286.0" promptText="User Id" scaleShape="false" styleClass="TextField">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="195.0" prefHeight="62.0" prefWidth="357.0" style="-fx-background-color: #1a001a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="195.0">
+               <children>
+                  <PasswordField fx:id="passwordtxt" prefHeight="26.0" prefWidth="286.0" promptText="Password" styleClass="PasswordField">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="257.0" prefHeight="62.0" prefWidth="357.0" style="-fx-background-color: #1a001a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="257.0">
+               <children>
+                  <ComboBox fx:id="typeCombo" prefHeight="30.0" prefWidth="286.0" promptText="Select Admin Level" style="-fx-background-color: #b3b3b3;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="371.0" prefHeight="62.0" prefWidth="357.0" style="-fx-background-color: #1a001a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="371.0">
+               <children>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="286.0" style="-fx-background-color: #990099; -fx-background-radius: 23;" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="123.0" prefWidth="481.0" style="-fx-background-color: #1a001a;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="101.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Screenshot (175).jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
