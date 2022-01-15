@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("Login/login.fxml"));
-        primaryStage.setTitle("Login | Textile Shop255343432");
+        primaryStage.setTitle("Login | Textile 900");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
