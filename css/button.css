@@ -1,7 +1,8 @@
 .button{
 	
 
-	-fx-text-fill:white;
+	-fx-text-fill:rose;
+	-fx-text-fill:black;
 }
 
 .button:hover{
